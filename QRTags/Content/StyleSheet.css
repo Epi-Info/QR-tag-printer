@@ -1,0 +1,47 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+
+@media all {
+    .cell {
+        font-family: 'Roboto Condensed', sans-serif;
+        border-right: 2px dotted #999;
+        border-bottom: 2px dotted #999;
+    }
+
+    .mdc-card.my-card-container {
+        height: 225px;
+        width: 350px;
+    }
+
+    .spacer {
+        height:25px;
+        width:25px;
+    }
+}
+
+
+@media print {
+    
+    .no-print {
+        display:none !important;
+        height:0;
+    }
+
+    .mdc-card.my-card-container {
+        display: none !important;
+        height: 0;
+    }
+
+    mdc-toolbar-fixed-adjust.my-card-container {
+        display: none !important;
+        height: 0;
+    }
+
+    .page-break {
+        page-break-before: always;
+        height: 0;
+    }
+
+    .expand {
+        width:100%;
+    }
+}
