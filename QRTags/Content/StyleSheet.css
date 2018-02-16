@@ -8,8 +8,9 @@
     }
 
     .mdc-card.my-card-container {
-        height: 225px;
-        width: 350px;
+        height: 260px;
+        width: 360px;
+        padding: 2px 2px 10px 10px;
     }
 
     .spacer {

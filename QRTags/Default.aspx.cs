@@ -37,7 +37,7 @@ namespace QRTags
 
         private void GenerateQRCodes()
         {
-            long time = (long)Math.Round(DateTime.Now.Subtract(DateTime.MinValue.AddYears(2016)).TotalMilliseconds);
+            long time = (long)Math.Round(DateTime.Now.Subtract(DateTime.MinValue.AddYears(2016).AddMonths(11).AddDays(6)).TotalMilliseconds);
 
             QRCodeGenerator gen = new QRCodeGenerator();
 

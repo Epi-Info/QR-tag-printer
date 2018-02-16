@@ -21,7 +21,7 @@
     
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="~/Content/StyleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/StyleSheet.css?v=57" />
     <title><asp:Literal runat="server" Text="<%$ Resources:LocalizedText, title %>" /></title>
 
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
@@ -47,22 +47,21 @@
             <div class="mdc-toolbar-fixed-adjust">
                 <div class="spacer"></div>
                 <div class="mdc-card my-card-container">
-                    <section class="mdc-card__primary">
-                        <h1 class="mdc-card__title mdc-card__title--large"><asp:Literal runat="server" Text="<%$ Resources:LocalizedText, settings %>" /></h1>
-                    </section>
-                    <section class="mdc-card__supporting-text">
-                        <h2 class="mdc-card__subtitle"><asp:Literal runat="server" Text="<%$ Resources:LocalizedText, pages %>" /></h2>
-                        <asp:DropDownList ID="cbxPages" runat="server" CssClass="mdc-select" AutoPostBack="true" />
-                        <div class="spacer"></div>
-                        <h2 class="mdc-card__subtitle"><asp:Literal runat="server" Text="<%$ Resources:LocalizedText, logo %>" /></h2>
-                        <div class="mdc-form-field mdc-form-field--align-end">
-                            <asp:FileUpload ID="uploader" runat="server" onchange="this.form.submit();" />
+                    <div class="mdc-card__primary-action">
+                            <h3 class="mdc-typography--title"><asp:Literal runat="server" Text="<%$ Resources:LocalizedText, settings %>" /></h3>
+                            <h3 class="mdc-typography--subheading1"><asp:Literal runat="server" Text="<%$ Resources:LocalizedText, pages %>" /></h3>
+                            <asp:DropDownList ID="cbxPages" runat="server" AutoPostBack="true" />
+                            <h3 class="mdc-typography--subheading1"><asp:Literal runat="server" Text="<%$ Resources:LocalizedText, logo %>" /></h3>
+                            <div class="mdc-form-field mdc-form-field--align-end">
+                                <asp:FileUpload ID="uploader" runat="server" onchange="this.form.submit();" />
+                            </div>
+                    </div>
+                    <div class="mdc-card__actions">
+                        <div class="mdc-card__action-buttons">
+                            <asp:Button runat="server" CssClass="mdc-button mdc-card__action mdc-card__action--button" Text="<%$ Resources:LocalizedText, refresh %>"/>
+                            <button class="mdc-button mdc-card__action mdc-card__action--button" onclick="window.print();return false"><asp:Literal runat="server" Text="<%$ Resources:LocalizedText, print %>" /></button>
                         </div>
-                    </section>
-                    <section class="mdc-card__actions">
-                        <asp:Button runat="server" CssClass="mdc-button mdc-button--compact mdc-card__action" Text="<%$ Resources:LocalizedText, refresh %>"/>
-                        <button class="mdc-button mdc-button--compact mdc-card__action" onclick="window.print();return false"><asp:Literal runat="server" Text="<%$ Resources:LocalizedText, print %>" /></button>
-                    </section>
+                    </div>
                 </div>
                 <div class="spacer"></div>
             </div>

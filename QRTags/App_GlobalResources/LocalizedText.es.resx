@@ -121,7 +121,7 @@
     <value>es</value>
   </data>
   <data name="logo" xml:space="preserve">
-    <value>Agrega tu propio logo aquí (opcional):</value>
+    <value>Agrega su propio logo aquí (opcional):</value>
   </data>
   <data name="one_page" xml:space="preserve">
     <value>1 Página</value>
@@ -130,7 +130,7 @@
     <value>¿Cuántas páginas?</value>
   </data>
   <data name="print" xml:space="preserve">
-    <value>Imprima</value>
+    <value>Imprimir</value>
   </data>
   <data name="refresh" xml:space="preserve">
     <value>Actualiza</value>
@@ -142,7 +142,7 @@
     <value>3 Páginas</value>
   </data>
   <data name="title" xml:space="preserve">
-    <value>Imprima las etiquetas QR</value>
+    <value>Imprimir las etiquetas QR</value>
   </data>
   <data name="two_pages" xml:space="preserve">
     <value>2 Páginas</value>
